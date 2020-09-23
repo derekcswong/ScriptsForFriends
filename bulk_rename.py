@@ -1,7 +1,7 @@
 import os
 
 
-def main():
+def bulkRename():
     path = '/Users/derek/Desktop/test'
     files = os.listdir(path)
     for file in files:
@@ -16,5 +16,6 @@ def main():
         splice = splice.strip()
         os.rename(os.path.join(path, file), os.path.join(path, lastName + ", " + splice + end))
 
+
 if __name__ == "__main__":
-    main()
+    bulkRename()
